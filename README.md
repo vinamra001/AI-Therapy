@@ -1,110 +1,109 @@
-AI Therapy
-🚀 An AI-powered chatbot for mental health support using NLP & Firebase Authentication.
+AI Therapy - Mental Health Chatbot
+AI Therapy is an AI-powered chatbot designed to support mental well-being. It helps users manage stress, loneliness, and psychological challenges by providing emotional support, stress management tips, and productivity strategies. The chatbot uses Natural Language Processing (NLP) to understand users’ messages and respond with helpful insights.
 
-📌 Overview
-AI Therapy is an AI-powered chatbot designed to assist users in managing their mental health. It provides emotional support, stress management tips, and productivity techniques using Natural Language Processing (NLP). The chatbot analyzes user input to determine their emotional state and suggests personalized solutions like meditation, Pomodoro timers, and stress-relief exercises.
+Project Overview
+Purpose
+Many people struggle with stress, anxiety, and loneliness but hesitate to talk about their feelings. AI Therapy is designed to offer a safe, non-judgmental space where users can share their thoughts and receive supportive responses, guidance, and relaxation techniques.
 
-🌟 Features
-Chatbot with AI-based Sentiment Analysis to detect user emotions
+How It Works
+The user types a message describing their emotions, stress, or workload.
 
-Multilingual support for better accessibility
+The chatbot analyzes the text using Sentiment Analysis to detect emotions (happy, sad, stressed, etc.).
 
-Personalized mental health suggestions based on user mood
+Based on the analysis, AI Therapy provides personalized responses, such as:
 
-Firebase authentication for secure login and user management
+Stress-relief techniques (e.g., meditation, deep breathing, relaxation exercises)
 
-Interactive UI built using React.js
+Focus and productivity strategies (e.g., Pomodoro timer, task prioritization, short breaks)
 
-Secure API with Flask for processing user messages
+Motivational and positive reinforcement messages
 
-🛠 Tech Stack
+Encouragement to seek professional help if necessary
+
+Features
+🗨️ Conversational Chatbot – Users can chat with AI Therapy about their mental state.
+
+🔍 Sentiment Analysis – Uses NLP techniques to detect user emotions.
+
+💡 Personalized Stress Management Tips – Provides customized relaxation exercises.
+
+⏳ Productivity Enhancement – Helps users stay focused with task prioritization and Pomodoro techniques.
+
+🌍 Multilingual Support (future update) – The chatbot will support multiple languages for better accessibility.
+
+🎨 User-Friendly UI – Visually appealing and simple to use.
+
+Technology Stack
 Component	Technology Used
 Frontend	React.js
 Backend	Python (Flask)
-Database	Firebase (for authentication)
-NLP	Sentiment Analysis using Natural Language Processing
-Hosting	Firebase Hosting
-📂 Project Structure
-php
+Database & Authentication	Firebase
+AI & NLP	Natural Language Processing (Sentiment Analysis)
+Deployment	Firebase Hosting
+Project Structure
+1. Frontend (React.js)
+User Interface (UI) – A simple and visually appealing design for smooth user interaction.
+
+Chat Interface – Users can type messages and receive real-time responses from the chatbot.
+
+2. Backend (Flask & AI Model)
+Flask API – Handles user requests, processes data, and returns responses.
+
+AI Model (Sentiment Analysis) – Analyzes user messages and determines emotional tone.
+
+3. Database & Authentication (Firebase)
+Firebase Authentication – User authentication for secured access.
+
+Real-time Database – (To be implemented later) Stores user conversations for analysis.
+
+Setup & Installation
+Prerequisites
+Ensure you have the following installed:
+
+Node.js
+
+Python
+
+Firebase CLI
+
+1. Clone the Repository
+sh
 Copy
 Edit
-AI-Therapy/
-│── frontend/                  # React.js frontend
-│   ├── src/
-│   │   ├── components/         # React components
-│   │   ├── pages/              # Main pages
-│   │   ├── utils/              # Utility functions
-│   │   ├── App.js              # Main application file
-│   │   ├── index.js            # Entry point for React
-│   ├── public/                 # Static assets
-│   ├── package.json            # Frontend dependencies
-│
-│── backend/                   # Python backend (Flask)
-│   ├── app.py                  # Main Flask application
-│   ├── model.py                # Sentiment analysis logic
-│   ├── requirements.txt        # Backend dependencies
-│
-│── firebase.json               # Firebase configuration
-│── .gitignore                  # Ignored files for Git
-│── README.md                   # Project documentation
-🚀 Installation & Setup
-🔹 1. Clone the Repository
-Copy the repository link from GitHub.
+git clone https://github.com/your-username/AI-Therapy.git
+cd AI-Therapy
+2. Install Dependencies
+Frontend
+sh
+Copy
+Edit
+cd frontend
+npm install
+npm start
+Backend
+sh
+Copy
+Edit
+cd backend
+pip install -r requirements.txt
+python app.py
+3. Deploy on Firebase
+sh
+Copy
+Edit
+firebase init
+firebase deploy
+Future Enhancements
+More advanced AI responses
 
-Open a terminal and run the git clone command.
+Voice-based chatbot interaction
 
-Navigate to the project directory.
+Integration with mental health professionals
 
-🔹 2. Install Frontend Dependencies
-Navigate to the frontend folder.
+Community support & forums
 
-Install required dependencies using npm install.
+Conclusion
+AI Therapy is designed to be a helpful companion for individuals struggling with stress and mental health challenges. It provides real-time emotional support using AI and NLP, making it a valuable tool for well-being and self-care.
 
-Start the frontend server using npm start.
+🚀 Let’s make mental health support accessible to everyone!
 
-🔹 3. Install Backend Dependencies
-Navigate to the backend folder.
-
-Install the required Python packages from requirements.txt.
-
-Run the backend server using python app.py.
-
-🔹 4. Configure Firebase
-Create a new Firebase project on the Firebase Console.
-
-Enable Authentication (Google, Email/Password, etc.).
-
-Obtain the Firebase configuration details from Project Settings.
-
-Add the Firebase configuration in the frontend project.
-
-🌍 Deployment
-🔹 Deploying Frontend to Firebase
-Build the React application.
-
-Login to Firebase CLI.
-
-Initialize Firebase hosting and deploy the project.
-
-🛠 Future Improvements
-Integrate AI-powered therapy suggestions
-
-Enhance chatbot responses using OpenAI API
-
-Introduce daily mood tracking and activity logging
-
-Implement real-time messaging for better user engagement
-
-🤝 Contribution
-Want to contribute to AI Therapy? Follow these steps:
-
-Fork the repository.
-
-Create a new branch (feature-xyz).
-
-Commit your changes.
-
-Push to GitHub and create a Pull Request.
-
-📜 License
-This project is open-source under the MIT License.
